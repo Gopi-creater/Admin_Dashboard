@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard">
+    <!-- Sidebar -->
+    <nav class="sidebar">
+      <h2>Admin Dashboard</h2>
+      <ul>
+        <li><a href="#users-section">User Management</a></li>
+        <li><a href="#roles-section">Role Management</a></li>
+        <li><a href="#permissions-section">Permissions</a></li>
+      </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      <!-- User Management Section -->
+      <section id="users-section">
+        <h2>User Management</h2>
+        <button class="btn">Add User</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Username</th>
+              <th>Email</th>
+              <th>Role</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>JohnDoe</td>
+              <td>john@example.com</td>
+              <td>Admin</td>
+              <td>Active</td>
+              <td>
+                <button class="btn">Edit</button>
+                <button class="btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Role Management Section -->
+      <section id="roles-section">
+        <h2>Role Management</h2>
+        <button class="btn">Add Role</button>
+        <table>
+          <thead>
+            <tr>
+              <th>Role</th>
+              <th>Permissions</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Admin</td>
+              <td>Read, Write, Delete</td>
+              <td>
+                <button class="btn">Edit</button>
+                <button class="btn delete">Delete</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Permissions Section -->
+      <section id="permissions-section">
+        <h2>Permissions</h2>
+        <button class="btn">Add Permission</button>
+        <ul>
+          <li>Read</li>
+          <li>Write</li>
+          <li>Delete</li>
+        </ul>
+      </section>
+    </div>
+  </div>
+</body>
+</html>
